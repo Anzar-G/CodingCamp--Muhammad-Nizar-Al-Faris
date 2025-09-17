@@ -1,0 +1,171 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg-color: #2c2c4b;
+    --text-color: #e0e0e0;
+    --border-color: #4a4a6e;
+    --accent-color: #5d5d81;
+    --hover-color: #72729a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background-color: var(--card-bg-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #b8b8d1;
+}
+
+.input-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.input-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #3e3e5c;
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-form input:focus {
+    border-color: var(--hover-color);
+}
+
+.action-button {
+    padding: 12px 20px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: var(--hover-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.filter-button, .delete-all-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button {
+    background-color: #5d5d81;
+    color: var(--text-color);
+}
+
+.filter-button:hover {
+    background-color: #72729a;
+}
+
+.delete-all-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-all-button:hover {
+    background-color: #c0392b;
+}
+
+.todo-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c2c4b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.todo-list-container th, .todo-list-container td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.todo-list-container thead th {
+    background-color: #3e3e5c;
+}
+
+.todo-list-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.status-cell {
+    font-weight: bold;
+}
+
+.status-pending {
+    color: orange;
+}
+
+.status-completed {
+    color: green;
+}
+
+.actions-cell button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.done-button {
+    background-color: #2ecc71;
+}
+
+.done-button:hover {
+    background-color: #27ae60;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.no-task-found {
+    text-align: center;
+    color: #999;
+    margin-top: 2rem;
+}
